@@ -1,0 +1,35 @@
+public class MyClass{
+	
+	
+	
+		public static void main(String s[])
+		{
+		student s1 = new student(null, 0, (char)0);
+		s1.studentResult("James", 58,'C');
+		s1.studentResult("Alan", 40, 'D');
+		s1.studentResult("Chris", 100, 'A');
+			
+		} 
+}
+
+class student{
+	
+	String name;
+	int marks;
+	char grade;
+	
+	student(String name, int marks, char grade){
+		name = this.name;
+		marks = this.marks;
+		grade = this.grade;
+	}
+
+
+	
+	void studentResult(String name, int marks, char grade){
+		
+		
+		System.out.println(name + " has got " + marks + " in his exam and has secured " + grade + " grade!"); 
+		
+	}
+}
